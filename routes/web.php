@@ -14,3 +14,8 @@ Route::get('/detect',function() {
 })->name('Detect Symptoms');
 
 
+Route::get('/chatbot', function () {
+    return view('pages.chatbot');
+})->name('Chatbot');
+
+
