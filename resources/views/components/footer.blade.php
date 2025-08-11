@@ -1,38 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <script src="https://cdn.tailwindcss.com"></script>
+    <meta charset="UTF-8" />
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
+<body>
+
 <!-- Footer -->
-    <footer class="left-0 relative bottom-0 w-full h-[100px] bg-slate-800 flex items-center justify-center gap-[26px] px-4 text-white text-[11px]">
-        <div class="container mx-auto flex justify-between gap-2">
-            <div>
-                <h3 class="font-semibold text-gray-800 mb-3">About</h3>
-                <p>AI Medical System empowers health decisions with smart detection and remedy suggestions.</p>
-            </div>
-            <div>
-                <h3 class="font-semibold text-white mb-3">Quick Links</h3>
-                <ul class="flex items-center justify-between gap-1 space-y-2">
-                    <li><a href="{{ url('/') }}" class="hover:text-blue-600">Home</a></li>
-                    <li><a href="{{ url('/detect') }}" class="hover:text-blue-600">Detect</a></li>
-                    <li><a href="#" class="hover:text-blue-600">About</a></li>
-                    <li><a href="#" class="hover:text-blue-600">Contact</a></li>
-                </ul>
-            </div>
-            <div>
-                <h3 class="font-semibold text-gray-800 mb-3">Contact</h3>
-                <p>Email: support@aimedical.com</p>
-                <p>Phone: +94 77 123 4567</p>
-            </div>
+<footer class="bg-blue-800 text-white py-10 ">
+    <div class="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- About -->
+        <div>
+            <h3 class="text-lg font-bold mb-4">About</h3>
+            <p class="text-sm leading-relaxed text-gray-300">
+                AI Medical System empowers health decisions through intelligent disease detection and remedy recommendations, making healthcare accessible and smarter.
+            </p>
         </div>
-        <div class="bg-gray-200 text-center py-4 text-xs text-gray-500">
-            © {{ date('Y') }} AI Medical System. All rights reserved.
-        </div>
-    </footer>
 
+        <!-- Quick Links -->
+        <div>
+            <h3 class="text-lg font-bold mb-4">Quick Links</h3>
+            <ul class="space-y-2 text-sm">
+                <li><a href="{{ url('/') }}" class="hover:text-blue-400 transition">Home</a></li>
+                <li><a href="{{ url('/detect') }}" class="hover:text-blue-400 transition">Detect</a></li>
+                <li><a href="{{ url('/about') }}" class="hover:text-blue-400 transition">About</a></li>
+                <li><a href="{{ url('/contact') }}" class="hover:text-blue-400 transition">Contact</a></li>
+            </ul>
+        </div>
+
+        <!-- Contact -->
+        <div>
+            <h3 class="text-lg font-bold mb-4">Contact</h3>
+            <p class="text-sm text-gray-300">Email: <a href="mailto:support@aimedical.com" class="hover:text-blue-400">support@aimedical.com</a></p>
+            <p class="text-sm text-gray-300">Phone: +94 77 123 4567</p>
+        </div>
+    </div>
+
+    <div class="border-t border-gray-700 mt-10 pt-6 text-center text-xs text-gray-400">
+        © {{ date('Y') }} AI Medical System. All rights reserved.
+    </div>
+</footer>
+
+</body>
 </html>
-
-
-
-    

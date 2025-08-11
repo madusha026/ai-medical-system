@@ -13,17 +13,21 @@
 
     @include('components.navabar')
 
+    @yield('notify')
+
+    <a href="{{ url('/chatbot') }}" class="fixed bottom-4 right-6 z-50 group">
+        <div class="w-14 h-14 mb-20 bg-[#ffffff] border-4 border-[#0F172A] rounded-full flex items-center justify-center shadow-lg hover:scale-110 transition-all duration-300 animate-bounce">
+            <i class="fas fa-robot text-[#0F172A] text-xl"></i>
+        </div>
+    </a>
+
     
     <!-- Page content -->
     <main class="flex-1 mt-20 w-full">
         @yield('content')
     </main>
 
-    <a href="{{ url('/chatbot') }}" class="fixed bottom-6 right-6 z-50 group">
-        <div class="w-14 h-14 bg-[#0F172A] rounded-full flex items-center justify-center shadow-lg hover:scale-110 transition-all duration-300 animate-bounce">
-            <i class="fas fa-robot text-white text-xl"></i>
-        </div>
-    </a>
+    
 
     @include('components.footer')
 

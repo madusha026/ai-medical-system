@@ -13,6 +13,11 @@
         background: #f8f9fa;
     }
 
+    a {
+        color: inherit !important; 
+        text-decoration: none !important;
+    }
+
     .chat {
         margin-top: 60px;
     }
@@ -30,7 +35,7 @@
     }
 
     .card-header {
-        background: #0F172A ;
+        background: #1e40af;;
         color: white;
     }
 
@@ -62,7 +67,7 @@
     }
 
     .msg_cotainer_send {
-        background-color: #0F172A;
+        background-color: #1e40af;
         color: #fff;
     }
 
@@ -83,7 +88,7 @@
     .send_btn {
         border-top-right-radius: 15px;
         border-bottom-right-radius: 15px;
-        background-color: #0F172A;
+        background-color: #1e40af;
         color: white;
     }
 
@@ -91,16 +96,16 @@
     font-size: 1rem;
     font-weight: bold;
     margin-top: 10px;
-}
-.chatbot-html ul, .chatbot-html ol {
-    padding-left: 20px;
-}
-.chatbot-html li {
-    margin-bottom: 5px;
-}
+    }
+    .chatbot-html ul, .chatbot-html ol {
+        padding-left: 20px;
+    }
+    .chatbot-html li {
+        margin-bottom: 10px;
+    }
 </style>
 
-<div class="container-fluid h-100">
+<div class="container-fluid h-100 mb-20">
     <div class="row justify-content-center h-100">
         <div class="col-md-8 col-xl-6 chat">
             <div class="card d-flex flex-column">
